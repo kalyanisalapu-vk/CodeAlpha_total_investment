@@ -1,6 +1,5 @@
 import os
 
-# Stock prices dictionary
 stock_prices = {
     "AAPL": 180,
     "TSLA": 250,
@@ -47,16 +46,12 @@ while True:
     
     print(f"✅ Added {stock} | Price: {price} | Quantity: {quantity} | Value: {investment}")
 
-# Final result
 print("\n💰 Total Investment Value:", total_investment)
 
-# Save to file (TXT)
 with open("portfolio.txt", "w") as file:
     file.write("Stock Portfolio Summary\n")
     file.write("------------------------\n")
     file.write("Total Investment Value: " + str(total_investment))
 
 print("📁 Data saved to portfolio.txt")
-
-# Show file location
 print("📍 File saved at:", os.getcwd())
